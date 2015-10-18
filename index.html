@@ -16,17 +16,10 @@
 <script>
   function getString(){
     var stringRecieved = document.getElementsByName('stringvar')[0].value;
-
-    // var myRe = /abc/gi;
-    var myRe = /^[a-z]/g
+    var myRe = /^^$/g
     var myArray = myRe.exec(stringRecieved);
 
     console.log( 'array val ', myArray );
-
-    // console.log("length ", myArray.length() )
-
-
-
     console.log('string val ', stringRecieved);
   }
 </script>
