@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <label for="stringvar">String</label>
+  <input type="text" name="stringvar" placeholder="Enter a string" >
+
+  <button onclick="getString();"> Submit </button>
+
+</body>
+</html>
+
+<script>
+  function getString(){
+    var stringRecieved = document.getElementsByName('stringvar')[0].value;
+
+    // var myRe = /abc/gi;
+    var myRe = /^[a-z]/g
+    var myArray = myRe.exec(stringRecieved);
+
+    console.log( 'array val ', myArray );
+
+    // console.log("length ", myArray.length() )
+
+
+
+    console.log('string val ', stringRecieved);
+  }
+</script>
